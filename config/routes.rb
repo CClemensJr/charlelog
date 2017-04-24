@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admins
   mount Ckeditor::Engine => '/ckeditor'
-  root      "posts#new"
-
+  root      "posts#index"
   resources :posts
 end
